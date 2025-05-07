@@ -1,11 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha página de login</title>
+<!DOCTYPE html> <!-- Declaro o tipo de documento HTML-->
+<html lang="pt-BR"> <!-- Definindo o idioma do documento-->
+<head> <!-- Cabeçalho do documento HTML-->
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a largura para o tamanho da tela do dispositivo-->
+  <title>Minha página de login</title><!-- Titulo do documento-->
+
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
- <h1>Minha página de login</h1>   
+<body><!-- corpo do documento HTML-->
+  <div> <!-- caixa para organizar nosso codigo-->
+    <h1>Página de login</h1>
+    <form> <!-- Formulario de login-->
+
+      <label for="email">
+        Digite o seu email:
+      </label>
+      <input type="email" id="email">
+
+      <label for="senha">
+        Digite a sua senha:
+      </label>
+      <input type="password" id="senha">
+
+      <button>
+        Entrar no sistema
+      </button>
+
+    </form>
+
+  </div>
 </body>
 </html>

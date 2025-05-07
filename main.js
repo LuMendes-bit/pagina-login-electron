@@ -1,20 +1,20 @@
-//Importando os módulos app e browserwindow do electron
+// Importando os módulos app e BrowserWindow do Electron
 const { app, BrowserWindow } = require('electron')
 
-//Define a função createwindow que é responsavel cria uma nova janela do aplicativo electron
+// Define a função createWindow que é responsável cria uma nova janela do aplicativo Electron
 const createWindow = () => {
-    //Criar um nova instâcia do BrowserWindow com as dimensões especificas
+  // Cria uma nova instância do BrowserWindow com as dimens~oes especificadas
   const win = new BrowserWindow({
-    width: 800,//Largura
-    height: 600//altura
+    width: 800, // Define a largura da janela
+    height: 600 // Define a altura da janela
   })
 
-  //Carregar o arquivo idex.html na janela criada
-  win.loadFile('index.html')
+  // Carrega o arquivo index.html na janela criada
+  win.loadFile("index.html")
 }
 
-//Quando o aplictivo estiver pronto, chama a fução createwindow paraa criar a ajanela principal
+// Quando o aplicativo estiver pronto, chama a função createWindow para criar a janela principal
 app.whenReady().then(() => {
-    //Execua a função createwindow para criar a janela principal
+  // Executa a função createWindow para criar a janela principal
   createWindow()
 })
